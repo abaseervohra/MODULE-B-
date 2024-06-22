@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background: url(image/cloudy-sky-background.jpg) no-repeat center center fixed;
+                background-size: cover;
+            }
+            .container {
+                background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for readability */
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            h1 {
+                margin-bottom: 20px;
+            }
+            .search {
+                margin-bottom: 20px;
+            }
+            input[type="text"] {
+                padding: 10px;
+                width: 200px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                padding: 10px 20px;
+                border: none;
+                background-color: #10e689;
+                color: #fff;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+            #weather {
+                margin-top: 20px;
+                color: #333;
+            }
+            .weather-icon {
+                display: block;
+                margin: 0 auto;
+                margin-top: 10px;
+                width: 100px; /* Adjust as needed */
+                height: auto; /* Maintain aspect ratio */
+            }
+        </style>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1184.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+        <div class="container">
+            <h1>Weather Forecast</h1>
+            <div class="search">
+                <input type="text" id="city" placeholder="Enter city name">
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+            <div id="weather">
+                <!-- Weather info will be displayed here -->
+            </div>
+        </div>
+        <script src="app.js"></script>
+    
+    
+
+</body>
+</html>
